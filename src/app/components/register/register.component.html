@@ -1,12 +1,21 @@
-<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-    <legend class="mat-h3">Login</legend>
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <legend class="mat-h3">Register</legend>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Name</mat-label>
+        <input type="text" matInput formControlName="name" required>
+        <button matSuffix mat-icon-button disabled=true><mat-icon>person</mat-icon></button>
+    </mat-form-field>
+
+    <br>
+
     <mat-form-field appearance="outline">
         <mat-label>Email</mat-label>
         <input type="email" matInput formControlName="email" required>
         <button matSuffix mat-icon-button disabled=true><mat-icon>email</mat-icon></button>
     </mat-form-field>
 
-    <br><br>
+    <br>
 
     <mat-form-field appearance="outline">
         <mat-label>Password</mat-label>
@@ -15,5 +24,5 @@
     </mat-form-field>
 
     <br><br>
-    <button mat-raised-button color="accent" type=submit [disabled]="!loginForm.valid">Submit</button>
+    <button mat-raised-button color="accent" type=submit [disabled]="!registerForm.valid">Submit</button>
 </form>

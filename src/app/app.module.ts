@@ -7,12 +7,18 @@ import { LoginComponent } from './components/login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './modules/shared/shared.module';
 import { TopBarComponent } from './components/top-bar/top-bar.component';
+import { RegisterComponent } from './components/register/register.component';
+import { ChangePasswordComponent } from './components/change-password/change-password.component';
+import { DeleteAccountComponent } from './components/delete-account/delete-account.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    TopBarComponent
+    TopBarComponent,
+    RegisterComponent,
+    ChangePasswordComponent,
+    DeleteAccountComponent
   ],
   imports: [
     BrowserModule,

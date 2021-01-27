@@ -22,7 +22,7 @@ export class LoginComponent implements OnInit {
     });
   }
 
-  login() {
+  onSubmit() {
     console.log('call login service');
   }
 
