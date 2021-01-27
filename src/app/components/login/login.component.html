@@ -1,0 +1,19 @@
+<form [formGroup]="loginForm" (ngSubmit)="login()">
+    <legend class="mat-h3">Login</legend>
+    <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input type="email" matInput formControlName="email">
+        <button matSuffix mat-icon-button disabled=true><mat-icon>email</mat-icon></button>
+    </mat-form-field>
+
+    <br><br>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Password</mat-label>
+        <input type="password" matInput formControlName="password">
+        <button matSuffix mat-icon-button disabled=true><mat-icon>vpn_key</mat-icon></button>
+    </mat-form-field>
+
+    <br><br>
+    <button mat-raised-button color="accent" type=submit [disabled]="!loginForm.valid">Submit</button>
+</form>

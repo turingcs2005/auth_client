@@ -1,0 +1,18 @@
+<mat-toolbar color="primary">
+    <div>
+      <mat-icon [matMenuTriggerFor]="mainMenu">menu</mat-icon>&nbsp;
+    </div>
+  
+    <div>Angular + Node.js Authentication</div>
+  
+    <div>
+      <mat-icon [routerLink]="['/help']">help</mat-icon>
+    </div>
+  
+  </mat-toolbar>
+  
+  <mat-menu #mainMenu="matMenu">
+    <button mat-menu-item [routerLink]="['/login']">Login</button>
+
+  </mat-menu>
+  
